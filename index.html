@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html >
+<head>
+	<title>Index</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<header>
+  <img src="images/cau3.jpg">
+</header>
+  <div class="clear"></div>
+  </div>
+      <div class="topnav" id="myTopnav">
+        <a href="#">Trang chủ</a>
+        <a href="#">Danh mục sản phẩm</a>
+        <a href="#">Chính sách bảo hành</a>
+        <a href="#">Tin tức</a>
+        <a href="javascript:void(0);"style="font-size:15px;"class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+  <div class="header_slide">
+      <div class="header_bottom_left">        
+        <div class="categories">
+          <ul>
+            <h3>DANH MỤC SẢN PHẨM</h3>
+              <li><a href="#">Nồi cơm điện</a></li>
+              <li><a href="#">Bình đun siêu tốc</a></li>
+              <li><a href="#">Nồi áp suất </a></li>
+              <li><a href="#">Lò vi sóng</a></li>
+             
+          </ul>
+        </div>          
+           </div>
+         </div>
+        <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="images/image2.jpg" width="100%" height="100%" >
+  </div>
+  <div class="mySlides fade">
+    <img src="images/image1.jpg"width="100%" height="100%" >
+  </div>
+  <div class="mySlides fade">
+    <img src="images/images.jpg"width="100%" height="100%" >
+  </div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 1500); 
+}
+</script>
+
+	<h2 class="title">Sản phẩm </h2>
+	<div class="row">
+		<div class="col-25">
+			<img src="images/img1.jpg">
+			<div class="name">NỒI CƠM DIỆN SUNHOUSE</div>
+    		<div class="price">990.000đ</div>
+    		<div class="add-card">MUA HÀNG</div>
+		</div>
+		<div class="col-25">
+			<img src="images/img2.jpg">
+			<div class="name">NỒI CƠM ĐIỆN PHILIPS</div>
+      		<div class="price">890.000đ</div>
+   		 <div class="add-card">MUA HÀNG</div>
+		</div>
+		<div class="col-25">
+			<img src="images/img3.jpg">
+			<div class="name">NỒI CƠM ĐIỆN MAMA </div>
+       <div class="price">990.000đ</div>
+    <div class="add-card">MUA HÀNG</div>
+		</div>
+		<div class="col-25">
+			<img src="images/img4.jpg">
+	<div class="name">NỒI CƠM ĐIỆN MAMA</div>
+       <div class="price">750.000đ</div>
+    <div class="add-card">MUA HÀNG</div>
+		</div>
+	<div class="row">
+		<div class="col-25">
+			<img src="images/img5.jpg">
+			<div class="name">BÌNH ĐUN SIÊU TỐC DELITES</div>
+       <div class="price">1.100.000đ</div>
+    <div class="add-card">MUA HÀNG</div>
+		</div>
+		<div class="col-25">
+			<img src="images/img6.jpg">
+			<div class="name">BÌNH ĐUN SIÊU TỐC DELITES</div>
+       <div class="price">1.200.000đ</div>
+    <div class="add-card">MUA HÀNG</div>
+
+		</div>
+		<div class="col-25">
+			<img src="images/img7.jpg">
+			<div class="name">BÌNH ĐUN SIÊU TỐC DELITES</div>
+       <div class="price">1.400.000đ</div>
+    <div class="add-card">MUA HÀNG</div>
+		</div>
+		<div class="col-25">
+			<img src="images/img8.jpg">
+			    <div class="name">BÌNH ĐUN SIÊU TỐC DELITES</div>
+       <div class="price">1.200.000đ</div>
+    <div class="add-card">MUA HÀNG</div>
+	</div>
+</div>
+<section>CÔNG TY ĐỒ GIA DỤNG KIM LONG</section>
+
+    <footer class="footer-distributed">
+
+      <div class="footer-right">
+
+        <img src="images/fb.png" >
+
+      </div>
+
+      <div class="footer-left">
+
+        <p class="footer-links">
+          <a  href="#">Trang chủ</a>
+          <a href="#">Danh mục sản phẩm</a>
+          <a href="#">Chính sách bảo hành</a>
+          <a href="#">Tin tức</a>
+        </p>
+        <p>Bản Quyền Thuộc Về Kim Long</p>
+      </div>
+
+    </footer>
+</body>
+<script type="text/javascript">
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+
+</html>
